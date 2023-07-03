@@ -71,10 +71,10 @@ struct ChosenDishView: View {
                     Text(treat.name)
                         .font(.custom("SFProDisplay", size: 16).bold())
                     HStack {
-                        Text("\(treat.price)₽")
+                        Text("\(treat.price) ₽")
                             .font(.custom("SFProDisplay", size: 14))
                         Text("•")
-                        Text("\(treat.weight)г")
+                        Text("\(treat.weight) г")
                             .font(.custom("SFProDisplay", size: 14))
                             .foregroundColor(.gray)
                     }
@@ -89,7 +89,6 @@ struct ChosenDishView: View {
                 
                 Button {
                     isShowingDetailView = false
-                    print(treat)
                     cartItem.add(treat)
         
                 } label: {

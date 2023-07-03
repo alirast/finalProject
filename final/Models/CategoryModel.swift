@@ -7,6 +7,11 @@
 
 import Foundation
 
+struct MockCategory: Decodable {
+    static let sampleCategory = Category(id: 1, name: "Mor", image_url: "person")
+}
+
+
 struct MainScreen: Decodable {
     let сategories: [Category]
 }

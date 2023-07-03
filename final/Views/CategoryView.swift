@@ -9,9 +9,7 @@ import SwiftUI
 
 struct CategoryView: View {
     @ObservedObject var viewModel = CategoryMainViewModel()
-    //var roundRectRequested: (_ name: String) -> ()
- 
-    
+
     var body: some View {
         ScrollView {
             ForEach(viewModel.categories, id: \.self) { category in
@@ -37,8 +35,9 @@ struct CategoryView: View {
                     }
                     
                 }
-    
+              
             }
+            
         }
         .toolbar { ToolContent() }
 

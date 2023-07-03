@@ -71,7 +71,7 @@ struct CartView: View {
                                             HStack(spacing: 20) {
                                                 Button(action: {
                                                     if number > 0 {
-                                                        number -= 1
+                                                        //number -= 1
                                                     }
                                                 }) {
                                                     Image(systemName: "minus")
