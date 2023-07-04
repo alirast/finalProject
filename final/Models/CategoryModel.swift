@@ -8,7 +8,7 @@
 import Foundation
 
 struct MockCategory: Decodable {
-    static let sampleCategory = Category(id: 1, name: "Mor", image_url: "person")
+    static let sampleCategory = Category(id: 1, name: "Mock", image_url: "person")
 }
 
 

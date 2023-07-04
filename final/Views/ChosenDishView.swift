@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ChosenDishView: View {
-    let treat: Item
+    let chosenItem: Item
     @Binding var isShowingDetailView: Bool
     @EnvironmentObject var cartItem: CartItemModel
 
@@ -21,7 +21,7 @@ struct ChosenDishView: View {
                         .background(Color(red: CGFloat(248.0/255), green: CGFloat(247.0/255), blue: CGFloat(245.0/255)))
                         .cornerRadius(10)
                         .overlay {
-                            AsyncImage(url: URL(string: treat.image_url)) { image in
+                            AsyncImage(url: URL(string: chosenItem.image_url)) { image in
                                 image
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
@@ -68,18 +68,18 @@ struct ChosenDishView: View {
                 Spacer()
                 
                 VStack(alignment: .leading, spacing: 6) {
-                    Text(treat.name)
+                    Text(chosenItem.name)
                         .font(.custom("SFProDisplay", size: 16).bold())
                     HStack {
-                        Text("\(treat.price) ₽")
+                        Text("\(chosenItem.price) ₽")
                             .font(.custom("SFProDisplay", size: 14))
                         Text("•")
-                        Text("\(treat.weight) г")
+                        Text("\(chosenItem.weight) г")
                             .font(.custom("SFProDisplay", size: 14))
                             .foregroundColor(.gray)
                     }
                     
-                    Text(treat.description)
+                    Text(chosenItem.description)
                         .font(.custom("SFProDisplay", size: 14))
                         .fixedSize(horizontal: false, vertical: true)
                 }
@@ -89,7 +89,7 @@ struct ChosenDishView: View {
                 
                 Button {
                     isShowingDetailView = false
-                    cartItem.add(treat)
+                    cartItem.add(chosenItem)
         
                 } label: {
                     Text("Добавить в корзину")
@@ -115,6 +115,6 @@ struct ChosenDishView: View {
 
 struct ChosenDishView_Previews: PreviewProvider {
     static var previews: some View {
-        ChosenDishView(treat: MockItem.sampleItem, isShowingDetailView: .constant(true))
+        ChosenDishView(chosenItem: MockItem.sampleItem, isShowingDetailView: .constant(true))
     }
 }

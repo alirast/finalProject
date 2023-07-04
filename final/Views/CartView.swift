@@ -13,7 +13,7 @@ struct CartView: View {
 
     @State private var number = 1
 
-    @State private var item: String = ""
+    @State private var orderedItem: String = ""
     
     @State private var string: String = ""
   

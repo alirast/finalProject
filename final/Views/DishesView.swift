@@ -141,7 +141,7 @@ struct DishesView: View {
             }
             if dishesViewModel.isShowingDetailView {
                 if let selectedItemInMenu = dishesViewModel.selectedDish {
-                    ChosenDishView(treat: selectedItemInMenu, isShowingDetailView: $dishesViewModel.isShowingDetailView)
+                    ChosenDishView(chosenItem: selectedItemInMenu, isShowingDetailView: $dishesViewModel.isShowingDetailView)
                 }
             }
         }
