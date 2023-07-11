@@ -11,11 +11,11 @@ struct DishesView: View {
     
     @Environment(\.dismiss) private var dismiss
     
-    @ObservedObject var dishesViewModel = DishesViewModel()
+    @StateObject var dishesViewModel = DishesViewModel()
     @State private var selectedTeg: String?
     @State var name = ""
     @State private var select = 0
-   
+    
     let layout = [GridItem(.adaptive(minimum: 90), alignment: .top)]
     
     let category: Category
@@ -59,7 +59,6 @@ struct DishesView: View {
                                     .onTapGesture {
                                         selectedTeg = teg
                                     }
-                                
                             }
                         }
                     }
