@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView {
+        //NavigationView {
             TabView {
                 CategoryView().tabItem() {
                     Image("category").renderingMode(.template)
@@ -30,7 +30,7 @@ struct ContentView: View {
             }
             .tabViewStyle(DefaultTabViewStyle())
             .accentColor(Color(uiColor: UIColor(red: CGFloat(51.0/255), green: CGFloat(100.0/255), blue: CGFloat(224.0/255), alpha: 1.0)))
-        }
+        //}
     }
 }
 
