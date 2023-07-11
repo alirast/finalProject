@@ -7,6 +7,31 @@
 
 import Foundation
 
+/*class DishesViewModel: ObservableObject {
+    @Published var dishes = [Item]()
+    @Published var selectedDish: Item?
+    @Published var usShowingDetailView = false
+    @Published var tegs = [String]()
+    
+    func getDishesView() {
+        DishesNetworkManager.shared.getCategories { result in
+            var urlArray = [String]()
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let dishes):
+                    self.dishes = dishes
+                    for dish in dishes {
+                        urlArray.append(contentsOf: dish.tegs.map({ String($0) }))
+                        self.tegs = Array(Set(urlArray)).sorted(by: <)
+                    }
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+            }
+        }
+    }
+}*/
+
 class DishesViewModel: ObservableObject {
     
     @Published var dishes = [Item]()

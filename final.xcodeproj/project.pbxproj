@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F30F6A72A5DB01F0030A212 /* CategoryNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F30F6A62A5DB01F0030A212 /* CategoryNetworkManager.swift */; };
+		4F30F6A92A5DB1760030A212 /* CategoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F30F6A82A5DB1760030A212 /* CategoryError.swift */; };
+		4F30F6AB2A5DBD7C0030A212 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F30F6AA2A5DBD7C0030A212 /* LoadingView.swift */; };
 		4FB392732A52675A00EC59E8 /* finalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB392722A52675A00EC59E8 /* finalApp.swift */; };
 		4FB392752A52675A00EC59E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB392742A52675A00EC59E8 /* ContentView.swift */; };
 		4FB392772A52675B00EC59E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FB392762A52675B00EC59E8 /* Assets.xcassets */; };
@@ -28,6 +31,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F30F6A62A5DB01F0030A212 /* CategoryNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryNetworkManager.swift; sourceTree = "<group>"; };
+		4F30F6A82A5DB1760030A212 /* CategoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryError.swift; sourceTree = "<group>"; };
+		4F30F6AA2A5DBD7C0030A212 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		4FB3926F2A52675A00EC59E8 /* final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = final.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FB392722A52675A00EC59E8 /* finalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finalApp.swift; sourceTree = "<group>"; };
 		4FB392742A52675A00EC59E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F30F6B02A5DCF930030A212 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				4F30F6A62A5DB01F0030A212 /* CategoryNetworkManager.swift */,
+				4F30F6A82A5DB1760030A212 /* CategoryError.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
 		4FB392662A52675A00EC59E8 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +94,7 @@
 		4FB392712A52675A00EC59E8 /* final */ = {
 			isa = PBXGroup;
 			children = (
+				4F30F6B02A5DCF930030A212 /* NetworkManager */,
 				4FB392862A52681700EC59E8 /* Models */,
 				4FB392832A5267AD00EC59E8 /* ViewModels */,
 				4FB392802A52677100EC59E8 /* Views */,
@@ -110,6 +126,7 @@
 				4FB392972A526BAA00EC59E8 /* CategoryToolbar.swift */,
 				4FB392992A526E1D00EC59E8 /* AccountView.swift */,
 				4FB3929B2A526EA600EC59E8 /* CartView.swift */,
+				4F30F6AA2A5DBD7C0030A212 /* LoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F30F6A92A5DB1760030A212 /* CategoryError.swift in Sources */,
 				4FB3929C2A526EA600EC59E8 /* CartView.swift in Sources */,
 				4FB392852A5267C000EC59E8 /* CategoryViewModel.swift in Sources */,
 				4FB392752A52675A00EC59E8 /* ContentView.swift in Sources */,
@@ -213,11 +231,13 @@
 				4FB392732A52675A00EC59E8 /* finalApp.swift in Sources */,
 				4FB3929E2A526FFB00EC59E8 /* CartItemModel.swift in Sources */,
 				4FB3928C2A526A4300EC59E8 /* SearchView.swift in Sources */,
+				4F30F6A72A5DB01F0030A212 /* CategoryNetworkManager.swift in Sources */,
 				4FB392882A52682500EC59E8 /* CategoryModel.swift in Sources */,
 				4FB3928A2A52685400EC59E8 /* CustomToolbar.swift in Sources */,
 				4FB392902A526AC800EC59E8 /* DishesViewModel.swift in Sources */,
 				4FB392962A526B8400EC59E8 /* CustomBackButton.swift in Sources */,
 				4FB3928E2A526AA700EC59E8 /* DishesView.swift in Sources */,
+				4F30F6AB2A5DBD7C0030A212 /* LoadingView.swift in Sources */,
 				4FB392822A52678800EC59E8 /* CategoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
