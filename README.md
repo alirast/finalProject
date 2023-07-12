@@ -4,7 +4,8 @@ Test task implemented with SwiftUI & API calls.
 MVVM architecture. 
 
 ## Preview
-<img width="343" alt="Снимок экрана 2023-07-06 в 18 34 13" src="https://github.com/alirast/finalProject/assets/97385918/eab8416b-65e1-4a48-85f7-92559af47d68">
-<img width="345" alt="Снимок экрана 2023-07-06 в 18 34 38" src="https://github.com/alirast/finalProject/assets/97385918/12101aeb-571e-4c46-8351-d4650de57b4c">
-<img width="342" alt="Снимок экрана 2023-07-06 в 18 34 53" src="https://github.com/alirast/finalProject/assets/97385918/ff9e582d-6bc0-4862-ad8d-dc340fee682c">
-<img width="341" alt="Снимок экрана 2023-07-06 в 18 35 11" src="https://github.com/alirast/finalProject/assets/97385918/bd3c3c3f-ac8b-4a18-b30c-2a0e67aed298">
+<img width="339" alt="Снимок экрана 2023-07-12 в 10 57 28" src="https://github.com/alirast/finalProject/assets/97385918/b288c9a3-f4c4-4a9e-bf15-32c0b7f3fcd0">
+<img width="335" alt="Снимок экрана 2023-07-12 в 10 58 12" src="https://github.com/alirast/finalProject/assets/97385918/d3269b46-f99d-46ab-b6b1-eb75369ca382">
+<img width="338" alt="Снимок экрана 2023-07-12 в 10 58 46" src="https://github.com/alirast/finalProject/assets/97385918/3ff8dc80-bd31-4de7-a500-1c7c2fbf4ee3">
+<img width="338" alt="Снимок экрана 2023-07-12 в 10 59 20" src="https://github.com/alirast/finalProject/assets/97385918/c1676e55-1d63-4f58-8b02-9e466504f99a">
+
